@@ -46,6 +46,21 @@ body {
   animation: gridMove 18s linear infinite;
 }
 
+.lightning {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.24) 10%, transparent 18%),
+    linear-gradient(132deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.28) 7%, transparent 16%),
+    radial-gradient(circle at 40% 30%, rgba(255, 255, 255, 0.18), transparent 45%),
+    radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.14), transparent 40%);
+  mix-blend-mode: screen;
+  opacity: 0;
+  filter: blur(0.5px) drop-shadow(0 0 12px rgba(255, 255, 255, 0.45));
+  animation: lightningFlash 2.8s ease-in-out infinite;
+}
+
 .orb {
   position: absolute;
   width: 320px;
@@ -491,5 +506,25 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes lightningFlash {
+  0%,
+  72% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0.9;
+  }
+  76% {
+    opacity: 0.2;
+  }
+  78% {
+    opacity: 0.8;
+  }
+  82%,
+  100% {
+    opacity: 0;
   }
 }
