@@ -136,6 +136,7 @@ body {
 
 .links {
   margin: 32px auto 0;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -145,17 +146,15 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  /*gap: 12px;*/
-  /*padding: 18px 16px;*/
+  gap: 12px;
+  padding: 12px 14px;
   border-radius: 18px;
   text-decoration: none;
   color: #e9f2ff;
-  /*background: linear-gradient(145deg, rgba(15, 32, 58, 0.9), rgba(9, 21, 43, 0.9));*/
-  /*border: 1px solid var(--border);*/
-  /*box-shadow: var(--shadow);*/
+  background: linear-gradient(145deg, rgba(15, 32, 58, 0.9), rgba(9, 21, 43, 0.9));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
   transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease, background 240ms ease;
-  
   overflow: hidden;
   opacity: 1;
   transform: none;
@@ -190,9 +189,9 @@ body {
 }
 
 .link-icon {
-  width: 86px;
-  height: 86px;
-  border-radius: 22px;
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   object-fit: cover;
   background: linear-gradient(135deg, rgba(78, 208, 255, 0.18), rgba(154, 203, 255, 0.08));
@@ -201,10 +200,9 @@ body {
 
 .link-label {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .message {
