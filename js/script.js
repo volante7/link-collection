@@ -39,8 +39,8 @@
     title: "つぼっち＆VOLANTE",
     subtitle: "webデザイナー / アビスパDAOモデレーター\nはなうたFC / VOLANTEデザイナー",
     links: [
-      { label: "Instagram", url: "https://www.instagram.com/", iconText: "Ig", startColor: "#f8a5c2", endColor: "#c06f98" },
-      { label: "X (Twitter)", url: "https://x.com/", iconText: "X", startColor: "#0f203c", endColor: "#4ed0ff" },
+      { label: "Instagram", url: "https://www.instagram.com/tsubo_tsubo17/", iconText: "Ig", startColor: "#f8a5c2", endColor: "#c06f98" },
+      { label: "X (Twitter)", url: "https://x.com/tsubo_volante", iconText: "X", startColor: "#0f203c", endColor: "#4ed0ff" },
     ],
   };
 
