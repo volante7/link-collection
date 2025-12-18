@@ -152,8 +152,8 @@ body {
 .links {
   margin: 32px auto 0;
   max-width: 360px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 12px;
 }
 
