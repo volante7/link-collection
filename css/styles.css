@@ -152,8 +152,8 @@ body {
 .links {
   margin: 32px auto 0;
   max-width: 360px;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
 }
 
@@ -433,7 +433,6 @@ body {
 
 @media (min-width: 720px) {
   .links {
-    grid-template-columns: repeat(3, minmax(160px, 1fr));
     gap: 20px;
   }
 
@@ -452,7 +451,6 @@ body {
   }
 
   .links {
-    grid-template-columns: repeat(2, minmax(130px, 1fr));
   }
 }
 
